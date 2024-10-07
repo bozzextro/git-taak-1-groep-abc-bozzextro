@@ -21,10 +21,19 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Image x:Name="ImgRood" Source="Assets\Rood.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgRood_MouseEnter" MouseLeave="Img_MouseLeave"/>
-            <Image x:Name="ImgGeel" Grid.Column="1" Source="Assets\Geel.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgGeel_MouseEnter" MouseLeave="Img_MouseLeave"/>
-            <Image x:Name="ImgGroen" Grid.Row="1"  Source="Assets\Groen.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgGroen_MouseEnter" MouseLeave="Img_MouseLeave"/>
-            <Image x:Name="ImgBlauw" Grid.Row="1" Grid.Column="1" Source="Assets\Blauw.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgBlauw_MouseEnter" MouseLeave="Img_MouseLeave"/>
+            <Image x:Name="ImgRood" Source="Assets\Rood.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgRood_MouseEnter" MouseLeave="Img_MouseLeave" MouseDown="ImgRood_MouseDown"/>
+            <Image x:Name="ImgGeel" Grid.Column="1" Source="Assets\Geel.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgGeel_MouseEnter" MouseLeave="Img_MouseLeave" MouseDown="ImgGeel_MouseDown"/>
+            <Image x:Name="ImgGroen" Grid.Row="1"  Source="Assets\Groen.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgGroen_MouseEnter" MouseLeave="Img_MouseLeave" MouseDown="ImgGroen_MouseDown"/>
+            <Image x:Name="ImgBlauw" Grid.Row="1" Grid.Column="1" Source="Assets\Blauw.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgBlauw_MouseEnter" MouseLeave="Img_MouseLeave" MouseDown="ImgBlauw_MouseDown"/>
         </Grid>
+        <StackPanel Orientation="Horizontal" Margin="20,0,0,20" VerticalAlignment="Bottom">
+            <Label Content="Kleurcode:" FontWeight="Bold"  />
+            <TextBox x:Name="TxtBoxKleurCode" Width="100" Height="15"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="20,0,0,0" VerticalAlignment="Bottom" >
+            <Label Content="Informatie:" FontWeight="Bold"/>
+            <TextBox x:Name="TxtBoxInformatie" Width="100" Height="15"/>
+
+        </StackPanel>
     </Grid>
 </Window>
