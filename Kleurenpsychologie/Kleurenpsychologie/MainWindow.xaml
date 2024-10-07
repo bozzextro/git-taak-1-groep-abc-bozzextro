@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Kleurenpsychologie" Height="450" Width="800">
     <Grid Background="LightGray">
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Column="1" Source="Assets\PXL.png" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="20"/>
     </Grid>
 </Window>
