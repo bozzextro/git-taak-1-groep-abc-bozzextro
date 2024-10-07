@@ -6,11 +6,25 @@
         xmlns:local="clr-namespace:Kleurenpsychologie"
         mc:Ignorable="d"
         Title="Kleurenpsychologie" Height="450" Width="800">
-    <Grid Background="LightGray">
+    <Grid x:Name="MainGrid" Background="LightGray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Image Grid.Column="1" Source="Assets\PXL.png" Height="50" Width="50" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="20"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image x:Name="ImgRood" Source="Assets\Rood.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgRood_MouseEnter" MouseLeave="Img_MouseLeave"/>
+            <Image x:Name="ImgGeel" Grid.Column="1" Source="Assets\Geel.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgGeel_MouseEnter" MouseLeave="Img_MouseLeave"/>
+            <Image x:Name="ImgGroen" Grid.Row="1"  Source="Assets\Groen.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgGroen_MouseEnter" MouseLeave="Img_MouseLeave"/>
+            <Image x:Name="ImgBlauw" Grid.Row="1" Grid.Column="1" Source="Assets\Blauw.png" Width="80" Height="80" VerticalAlignment="Center" HorizontalAlignment="Center" MouseEnter="ImgBlauw_MouseEnter" MouseLeave="Img_MouseLeave"/>
+        </Grid>
     </Grid>
 </Window>

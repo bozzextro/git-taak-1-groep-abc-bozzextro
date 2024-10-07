@@ -24,5 +24,34 @@ namespace Kleurenpsychologie
         {
             InitializeComponent();
         }
+
+        private void ImgRood_MouseEnter(object sender, MouseEventArgs e)
+        {
+            MainGrid.Background = new SolidColorBrush(Colors.Red);
+        }
+
+        private void ImgGeel_MouseEnter(object sender, MouseEventArgs e)
+        {
+            MainGrid.Background = new SolidColorBrush(Colors.Yellow);
+
+        }
+
+        private void ImgGroen_MouseEnter(object sender, MouseEventArgs e)
+        {
+            MainGrid.Background = new SolidColorBrush(Colors.Green);
+
+        }
+
+        private void ImgBlauw_MouseEnter(object sender, MouseEventArgs e)
+        {
+            MainGrid.Background = new SolidColorBrush(Colors.Blue);
+
+        }
+
+        private void Img_MouseLeave(object sender, MouseEventArgs e)
+        {
+            MainGrid.Background = new SolidColorBrush(Colors.LightGray);
+
+        }
     }
 }
