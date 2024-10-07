@@ -28,11 +28,11 @@
         </Grid>
         <StackPanel Orientation="Horizontal" Margin="20,0,0,20" VerticalAlignment="Bottom">
             <Label Content="Kleurcode:" FontWeight="Bold"  />
-            <TextBox x:Name="TxtBoxKleurCode" Width="100" Height="15"/>
+            <TextBox x:Name="TxtBoxKleurCode" Width="200" Height="15"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Margin="20,0,0,0" VerticalAlignment="Bottom" >
             <Label Content="Informatie:" FontWeight="Bold"/>
-            <TextBox x:Name="TxtBoxInformatie" Width="100" Height="15"/>
+            <TextBox x:Name="TxtBoxInformatie" Width="200" Height="15"/>
 
         </StackPanel>
     </Grid>
